@@ -2,7 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher.jsx';
 
 const Header = () => {
