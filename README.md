@@ -13,7 +13,13 @@ npm run dev
 npm run build
 ```
 
-The production build outputs to `dist/` with a top-level `index.html` suitable for Cloudflare Pages.
+The build command remains `npm run build`, and the production output continues to be written to `dist/` with a top-level `index.html` suitable for Cloudflare Pages.
+
+## i18n
+
+- RU (`ru`) and EN (`en`) translations are fully supported.
+- The language toggle lives in the site header and persists the selected locale in `localStorage` so it survives reloads.
+- The `<html lang>` attribute is updated whenever the active language changes.
 
 ## Deploy to Cloudflare Pages
 
