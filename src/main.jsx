@@ -5,6 +5,7 @@ import i18n from './i18n';
 import App from './App.jsx';
 import './lib/i18n.js';
 import './index.css';
+import './i18n.js';
 
 document.documentElement.setAttribute('lang', i18n.language || 'en');
 

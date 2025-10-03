@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -20,9 +21,9 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-40 bg-[#0c0d10bf] backdrop-blur-xl border-b border-white/5">
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between gap-6">
-        <Link to="/" aria-label="ITechWise home" className="flex items-center gap-3">
+        <Link to="/" aria-label={t('header.ariaHome')} className="flex items-center gap-3">
           <div className="h-10 w-10 rounded-3xl bg-gold bg-[length:160%] bg-center shadow-lg shadow-brand/25" aria-hidden />
-          <span className="font-semibold tracking-tight text-lg">ITechWise</span>
+          <span className="font-semibold tracking-tight text-lg">{t('common.brandName')}</span>
         </Link>
         <nav aria-label="Main navigation" className="hidden md:flex items-center gap-8 text-sm">
           <div className="flex items-center gap-6">

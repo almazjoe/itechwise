@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (event) => {
@@ -16,10 +18,8 @@ const ContactForm = () => {
   if (submitted) {
     return (
       <div className="glass-panel rounded-3xl border border-white/10 p-10 text-center space-y-4">
-        <h2 className="text-3xl font-semibold">Thank you!</h2>
-        <p className="text-muted">
-          A specialist will reach out shortly to book a discovery call and align on your hiring goals.
-        </p>
+        <h2 className="text-3xl font-semibold">{t('contactForm.successTitle')}</h2>
+        <p className="text-muted">{t('contactForm.successDescription')}</p>
       </div>
     );
   }
@@ -28,7 +28,7 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit} className="glass-panel rounded-3xl border border-white/10 p-8 sm:p-10 space-y-6" noValidate>
       <div className="grid sm:grid-cols-2 gap-6">
         <label className="flex flex-col gap-2 text-sm">
-          <span className="text-muted">Name</span>
+          <span className="text-muted">{t('contactForm.fields.name')}</span>
           <input
             type="text"
             name="name"
@@ -37,7 +37,7 @@ const ContactForm = () => {
           />
         </label>
         <label className="flex flex-col gap-2 text-sm">
-          <span className="text-muted">Work email</span>
+          <span className="text-muted">{t('contactForm.fields.email')}</span>
           <input
             type="email"
             name="email"
@@ -47,7 +47,7 @@ const ContactForm = () => {
         </label>
       </div>
       <label className="flex flex-col gap-2 text-sm">
-        <span className="text-muted">Company</span>
+        <span className="text-muted">{t('contactForm.fields.company')}</span>
         <input
           type="text"
           name="company"
@@ -56,7 +56,7 @@ const ContactForm = () => {
         />
       </label>
       <label className="flex flex-col gap-2 text-sm">
-        <span className="text-muted">Hiring needs</span>
+        <span className="text-muted">{t('contactForm.fields.needs')}</span>
         <textarea
           name="message"
           required
@@ -68,11 +68,9 @@ const ContactForm = () => {
         type="submit"
         className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-brand text-bg font-semibold px-6 py-3 shadow-lg shadow-brand/40 hover:bg-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
       >
-        Submit
+        {t('contactForm.submit')}
       </button>
-      <p className="text-xs text-muted">
-        By submitting this form you agree to be contacted about ITechWise services.
-      </p>
+      <p className="text-xs text-muted">{t('contactForm.consent')}</p>
     </form>
   );
 };
