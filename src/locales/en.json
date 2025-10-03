@@ -1,0 +1,85 @@
+{
+  "navigation": {
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "cases": "Case studies",
+      "articles": "Articles",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "cta": "Get candidates in 48 hours"
+  },
+  "hero": {
+    "tagline": "Predictable hiring for Web3, FinTech, iGaming and AI.",
+    "title": "Unlock elite engineering talent with ITechWise",
+    "description": "We deliver vetted specialists across blockchain, trading, payments, and AI. Get a shortlist within 48 hours, backed by deep technical screening and global reach.",
+    "primaryCta": "Get candidates in 48 hours",
+    "secondaryCta": "See case studies",
+    "candidate": {
+      "name": "Maria Iglesias",
+      "role": "Senior Rust Engineer · Spain",
+      "statusLabel": "Status",
+      "statusValue": "Shortlisted",
+      "experienceLabel": "Experience",
+      "experienceValue": "10+ years · Web3, DeFi, Payments",
+      "highlightsLabel": "Highlights",
+      "highlightsValue": "Polyglot · Team Lead",
+      "mobilityLabel": "Mobility",
+      "mobilityValue": "Remote | EU timezones"
+    },
+    "process": {
+      "title": "Process",
+      "steps": ["Briefing", "Sourcing", "Interviews", "Offer"]
+    }
+  },
+  "badges": [
+    {
+      "title": "7M+ candidate graph",
+      "description": "48-hour shortlist from a multilingual pool."
+    },
+    {
+      "title": "Deep technical vetting",
+      "description": "Rust, Go, backend, DevOps, mobile, C-level."
+    },
+    {
+      "title": "Global reach",
+      "description": "Coverage across EU, MENA, APAC, LATAM, US."
+    }
+  ],
+  "value": [
+    {
+      "title": "48-hour delivery",
+      "description": "Shortlists in two business days backed by a 7M+ candidate graph."
+    },
+    {
+      "title": "Deep technical screening",
+      "description": "Rust, Go, backend, DevOps, data, mobile and executive talent interviews."
+    },
+    {
+      "title": "Global coverage",
+      "description": "18+ languages with reach across EU, MENA, APAC, LATAM and North America."
+    },
+    {
+      "title": "Risk-free hiring",
+      "description": "Success-fee only with 2–3-month replacement guarantee built in."
+    }
+  ],
+  "contact": {
+    "sectionLabel": "Contact",
+    "title": "Book a discovery call",
+    "description": "Share your hiring roadmap and we will design a tailored approach. Expect a shortlist of vetted candidates within 48 hours of kickoff.",
+    "form": {
+      "name": "Name",
+      "email": "Work email",
+      "company": "Company",
+      "needs": "Hiring needs",
+      "submit": "Submit",
+      "disclaimer": "By submitting this form you agree to be contacted about ITechWise services."
+    },
+    "success": {
+      "title": "Thank you!",
+      "message": "A specialist will reach out shortly to book a discovery call and align on your hiring goals."
+    }
+  }
+}
