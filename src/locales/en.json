@@ -1,27 +1,6 @@
 {
-  "common": {
-    "brandName": "ITechWise",
-    "skipToMain": "Skip to main content",
-    "ctaPrimary": "Get candidates in 48 hours",
-    "ctaSecondary": "See case studies",
-    "readArticle": "Read article →",
-    "viewDetails": "View details →",
-    "viewCase": "View case →",
-    "browseAllCases": "Browse all cases",
-    "includedInEveryEngagement": "Included in every engagement",
-    "bookDiscoveryCall": "Book a discovery call",
-    "backToCases": "Back to cases",
-    "backToAllCases": "Back to all cases",
-    "backToArticles": "Back to articles",
-    "articleNotFoundTitle": "Article not found",
-    "articleNotFoundDescription": "Explore more insights from our team.",
-    "caseNotFoundTitle": "Case study not found",
-    "caseNotFoundDescription": "Explore other success stories from our clients.",
-    "footerCopyright": "© {{year}} ITechWise. All rights reserved."
-  },
-  "header": {
-    "ariaHome": "ITechWise home",
-    "nav": {
+  "navigation": {
+    "links": {
       "home": "Home",
       "services": "Services",
       "cases": "Case studies",
@@ -32,26 +11,12 @@
     "cta": "Get candidates in 48 hours"
   },
   "hero": {
-    "badge": "Predictable hiring for Web3, FinTech, iGaming and AI.",
-    "headingStart": "Unlock elite engineering talent with",
+    "tagline": "Predictable hiring for Web3, FinTech, iGaming and AI.",
+    "title": "Unlock elite engineering talent with ITechWise",
     "description": "We deliver vetted specialists across blockchain, trading, payments, and AI. Get a shortlist within 48 hours, backed by deep technical screening and global reach.",
     "primaryCta": "Get candidates in 48 hours",
     "secondaryCta": "See case studies",
-    "stats": [
-      {
-        "label": "7M+ candidate graph",
-        "description": "48-hour shortlist from a multilingual pool."
-      },
-      {
-        "label": "Deep technical vetting",
-        "description": "Rust, Go, backend, DevOps, mobile, C-level."
-      },
-      {
-        "label": "Global reach",
-        "description": "Coverage across EU, MENA, APAC, LATAM, US."
-      }
-    ],
-    "card": {
+    "candidate": {
       "name": "Maria Iglesias",
       "role": "Senior Rust Engineer · Spain",
       "statusLabel": "Status",
@@ -61,341 +26,60 @@
       "highlightsLabel": "Highlights",
       "highlightsValue": "Polyglot · Team Lead",
       "mobilityLabel": "Mobility",
-      "mobilityValue": "Remote | EU timezones",
-      "photoAlt": "Candidate portrait",
-      "processLabel": "Process",
-      "processSteps": [
-        "Briefing",
-        "Sourcing",
-        "Interviews",
-        "Offer"
-      ]
+      "mobilityValue": "Remote | EU timezones"
+    },
+    "process": {
+      "title": "Process",
+      "steps": ["Briefing", "Sourcing", "Interviews", "Offer"]
     }
   },
-  "logoCloud": {
-    "heading": "Trusted by scaling teams worldwide",
-    "logos": [
-      "ApeX Trading",
-      "OrbitPay",
-      "NovaBank",
-      "HyperLedger Labs",
-      "SolForge",
-      "Vela Esports"
-    ]
-  },
-  "valueGrid": {
-    "items": [
-      {
-        "icon": "clock",
-        "title": "48-hour delivery",
-        "description": "Shortlists in two business days backed by a 7M+ candidate graph."
-      },
-      {
-        "icon": "cpu",
-        "title": "Deep technical screening",
-        "description": "Rust, Go, backend, DevOps, data, mobile and executive talent interviews."
-      },
-      {
-        "icon": "globe",
-        "title": "Global coverage",
-        "description": "18+ languages with reach across EU, MENA, APAC, LATAM and North America."
-      },
-      {
-        "icon": "shield",
-        "title": "Risk-free hiring",
-        "description": "Success-fee only with 2–3-month replacement guarantee built in."
-      }
-    ]
-  },
-  "processStepper": {
-    "label": "Process",
-    "heading": "How we deliver predictable hiring",
-    "steps": [
-      {
-        "title": "01. Discovery call",
-        "description": "Align on your stack, hiring velocity and compensation bands."
-      },
-      {
-        "title": "02. Market mapping",
-        "description": "Activate the 7M+ candidate graph and outbound researchers."
-      },
-      {
-        "title": "03. Shortlist in 48h",
-        "description": "Receive a curated slate with video notes, code samples and cultural fit."
-      },
-      {
-        "title": "04. Hiring support",
-        "description": "Interview coordination, offer negotiation and 2–3-month replacement guarantee."
-      }
-    ]
-  },
-  "caseCarousel": {
-    "label": "Proof",
-    "heading": "Case studies that show predictable delivery for complex tech teams",
-    "cta": "Browse all cases",
-    "itemLabel": "Case study",
-    "items": [
-      {
-        "slug": "defi-market-maker",
-        "title": "DeFi market maker scaling engineering pods",
-        "summary": "Placed 12 senior Rust and quant engineers across EU and LATAM to launch a new derivatives exchange.",
-        "metric": "12 hires · 6 weeks"
-      },
-      {
-        "slug": "igaming-platform",
-        "title": "iGaming platform accelerates mobile roadmap",
-        "summary": "Delivered a squad of Kotlin and Swift engineers to ship a new loyalty experience in 10 weeks.",
-        "metric": "4 hires · 30 days"
-      },
-      {
-        "slug": "ai-fraud-detection",
-        "title": "AI fraud detection company enters MENA",
-        "summary": "Sourced bilingual data scientists and compliance leaders to launch regulated operations.",
-        "metric": "5 hires · 45 days"
-      }
-    ]
-  },
-  "pricingTeaser": {
-    "label": "Pricing",
-    "heading": "Success-based fees with built-in guarantees",
-    "description": "Partner with a recruitment squad that aligns incentives with your hiring roadmap. We operate as an extension of your talent team, providing velocity and market intelligence.",
-    "bullets": [
-      "Success fee only. No retainers.",
-      "2–3-month replacement guarantee.",
-      "Flexible engagement: embedded or project-based.",
-      "Transparent weekly reporting and talent market insights."
-    ]
-  },
-  "ctaBanner": {
-    "label": "Ready?",
-    "heading": "Brief us today and meet vetted candidates within 48 hours",
-    "description": "Whether you are building Web3 infrastructure, scaling fintech systems or launching AI ventures, we connect you with senior engineers and leaders who can deliver.",
-    "button": "Get candidates in 48 hours"
-  },
-  "contactForm": {
-    "successTitle": "Thank you!",
-    "successDescription": "A specialist will reach out shortly to book a discovery call and align on your hiring goals.",
-    "fields": {
+  "badges": [
+    {
+      "title": "7M+ candidate graph",
+      "description": "48-hour shortlist from a multilingual pool."
+    },
+    {
+      "title": "Deep technical vetting",
+      "description": "Rust, Go, backend, DevOps, mobile, C-level."
+    },
+    {
+      "title": "Global reach",
+      "description": "Coverage across EU, MENA, APAC, LATAM, US."
+    }
+  ],
+  "value": [
+    {
+      "title": "48-hour delivery",
+      "description": "Shortlists in two business days backed by a 7M+ candidate graph."
+    },
+    {
+      "title": "Deep technical screening",
+      "description": "Rust, Go, backend, DevOps, data, mobile and executive talent interviews."
+    },
+    {
+      "title": "Global coverage",
+      "description": "18+ languages with reach across EU, MENA, APAC, LATAM and North America."
+    },
+    {
+      "title": "Risk-free hiring",
+      "description": "Success-fee only with 2–3-month replacement guarantee built in."
+    }
+  ],
+  "contact": {
+    "sectionLabel": "Contact",
+    "title": "Book a discovery call",
+    "description": "Share your hiring roadmap and we will design a tailored approach. Expect a shortlist of vetted candidates within 48 hours of kickoff.",
+    "form": {
       "name": "Name",
       "email": "Work email",
       "company": "Company",
-      "needs": "Hiring needs"
+      "needs": "Hiring needs",
+      "submit": "Submit",
+      "disclaimer": "By submitting this form you agree to be contacted about ITechWise services."
     },
-    "submit": "Submit",
-    "consent": "By submitting this form you agree to be contacted about ITechWise services."
-  },
-  "footer": {
-    "description": "Predictable hiring for Web3, FinTech, iGaming and AI. We combine market intelligence, human touch and automation to deliver talent at speed.",
-    "columns": [
-      {
-        "title": "Services",
-        "items": [
-          { "label": "Executive search", "to": "/services" },
-          { "label": "Embedded recruitment", "to": "/services" },
-          { "label": "Technical assessments", "to": "/services" }
-        ]
-      },
-      {
-        "title": "Company",
-        "items": [
-          { "label": "About", "to": "/about" },
-          { "label": "Case studies", "to": "/cases" },
-          { "label": "Articles", "to": "/articles" }
-        ]
-      },
-      {
-        "title": "Contact",
-        "items": [
-          { "label": "hello@itechwise.com", "to": "mailto:hello@itechwise.com" },
-          { "label": "LinkedIn", "to": "https://www.linkedin.com/company/itechwise/" },
-          { "label": "Book a call", "to": "/contact" }
-        ]
-      }
-    ]
-  },
-  "articlesPage": {
-    "label": "Articles",
-    "heading": "Insights from global hiring operators",
-    "description": "Read our playbooks on technical recruiting, market expansion and talent operations from across Web3, FinTech, iGaming and AI.",
-    "articles": [
-      {
-        "slug": "engineering-hiring-trends-2024",
-        "title": "Engineering hiring trends for Web3, FinTech and AI in 2024",
-        "excerpt": "Salary benchmarks, hot skills and regional insights drawn from over 7 million candidates across emerging tech verticals.",
-        "date": "April 2024"
-      },
-      {
-        "slug": "building-remote-teams",
-        "title": "How to build resilient remote engineering teams across timezones",
-        "excerpt": "Playbooks for hiring in EU, MENA, APAC and LATAM while keeping culture, velocity and compliance in sync.",
-        "date": "February 2024"
-      },
-      {
-        "slug": "technical-screening-playbook",
-        "title": "A modern technical screening playbook for critical hires",
-        "excerpt": "Interview frameworks, assessments and scorecards that uncover true strengths.",
-        "date": "January 2024"
-      },
-      {
-        "slug": "talent-intelligence",
-        "title": "Turning talent intelligence into a competitive edge",
-        "excerpt": "How successful companies blend data, human insight and automation to scale hiring efficiently.",
-        "date": "November 2023"
-      }
-    ]
-  },
-  "articleDetail": {
-    "articles": {
-      "engineering-hiring-trends-2024": {
-        "title": "Engineering hiring trends for Web3, FinTech and AI in 2024",
-        "date": "April 2024",
-        "body": [
-          "The market for emerging technology talent has normalized after the rapid swings of 2022–23. Companies are doubling down on senior engineers capable of shipping complex systems with lean teams.",
-          "Rust and Go remain the most requested backend languages in Web3 and trading, while Python and Scala dominate data and ML pipelines. AI teams increasingly require applied scientists who can translate research into production.",
-          "Compensation expectations vary by region: senior Rust engineers in the EU now command €110k–€150k base, while LATAM specialists often accept USD 80k–120k with token upside. Hybrid and remote flexibility is a non-negotiable demand.",
-          "Successful teams invest in tailored outreach, transparent processes and structured assessments to win top talent quickly."
-        ]
-      },
-      "building-remote-teams": {
-        "title": "How to build resilient remote engineering teams across timezones",
-        "date": "February 2024",
-        "body": [
-          "Building distributed teams starts with designing overlapping hours and reliable async rituals. We recommend splitting squads into pod structures anchored around product areas.",
-          "Hiring from EU, MENA, APAC and LATAM enables 24/5 coverage, but requires thoughtful documentation culture, robust security practices and localized benefits.",
-          "Employers that invest in onboarding playbooks, mentorship and regular on-sites see retention gains even in highly competitive markets."
-        ]
-      },
-      "technical-screening-playbook": {
-        "title": "A modern technical screening playbook for critical hires",
-        "date": "January 2024",
-        "body": [
-          "The best technical interviews simulate real-world work. Replace abstract puzzles with collaborative code reviews, architecture discussions and scenario-based assessments.",
-          "ITechWise runs structured scorecards that cover technical depth, communication and leadership signals, providing clients with clear recommendations.",
-          "Candidates value transparency—sharing timelines, expectations and feedback loops reduces drop-off and improves employer brand."
-        ]
-      },
-      "talent-intelligence": {
-        "title": "Turning talent intelligence into a competitive edge",
-        "date": "November 2023",
-        "body": [
-          "Talent intelligence blends market data, human relationships and automation to prioritize hiring bets. Start by mapping target personas and regions, then layering in compensation and competitor signals.",
-          "Weekly dashboards keep founders and talent leaders aligned while embedded recruiters translate insights into outreach campaigns.",
-          "Companies that operationalize these loops fill roles faster and create better candidate experiences."
-        ]
-      }
+    "success": {
+      "title": "Thank you!",
+      "message": "A specialist will reach out shortly to book a discovery call and align on your hiring goals."
     }
-  },
-  "servicesPage": {
-    "label": "Services",
-    "heading": "Recruitment solutions tailored to high-growth tech companies",
-    "description": "We design search strategies that work for Web3 protocols, fintech scale-ups, iGaming operators and AI labs. Every engagement is customized to your hiring velocity and budget.",
-    "services": [
-      {
-        "title": "Executive and specialist search",
-        "description": "From CTOs and Heads of Engineering to Staff Rust engineers and Lead Data Scientists, we run bespoke searches with rigorous technical assessments."
-      },
-      {
-        "title": "Embedded recruitment squads",
-        "description": "Deploy full-cycle recruiters, sourcers and coordinators that integrate with your team, ATS and cadence to accelerate hiring sprints."
-      },
-      {
-        "title": "Market intelligence",
-        "description": "Salary benchmarks, location strategy and competitor mapping to inform hiring plans for new regions or product lines."
-      },
-      {
-        "title": "Candidate experience programs",
-        "description": "Craft employer narratives, outreach and communication flows that resonate with senior technical talent in competitive markets."
-      }
-    ]
-  },
-  "casesPage": {
-    "label": "Case studies",
-    "heading": "Predictable hiring outcomes for complex tech teams",
-    "description": "Explore how ITechWise supports protocol launches, platform rebuilds and new market entries with vetted technical talent.",
-    "caseStudies": [
-      {
-        "slug": "defi-market-maker",
-        "industry": "Web3 / Trading",
-        "title": "DeFi market maker scaling engineering pods",
-        "summary": "Rebuilt their derivatives exchange squad with senior Rust engineers, quants and DevOps talent across Europe and LATAM.",
-        "result": "12 hires in 6 weeks"
-      },
-      {
-        "slug": "igaming-platform",
-        "industry": "iGaming",
-        "title": "iGaming platform accelerates mobile roadmap",
-        "summary": "Delivered a blended squad of Kotlin and Swift developers alongside QA and PMs to launch a loyalty experience in record time.",
-        "result": "4 hires in 30 days"
-      },
-      {
-        "slug": "ai-fraud-detection",
-        "industry": "AI / FinCrime",
-        "title": "AI fraud detection company enters MENA",
-        "summary": "Provided bilingual data scientists, compliance leads and product managers to support regulated market entry.",
-        "result": "5 hires in 45 days"
-      }
-    ]
-  },
-  "caseDetail": {
-    "cases": {
-      "defi-market-maker": {
-        "title": "DeFi market maker scaling engineering pods",
-        "date": "2024",
-        "industry": "Web3 / Trading",
-        "body": [
-          "A leading algorithmic trading firm expanding into decentralized derivatives needed to rebuild its core engineering pod after a strategic pivot.",
-          "ITechWise partnered closely with the CTO to translate hiring needs into scorecards covering Rust, C++, Solana, latency optimization and quant risk awareness.",
-          "Within two weeks we delivered a rolling pipeline of senior engineers and DevOps specialists across EU and LATAM, with technical deep-dives recorded for the client team.",
-          "The squad shipped the new derivatives exchange within six weeks, enabling 30% faster market expansion and improved liquidity provisioning."
-        ],
-        "result": "12 hires in 6 weeks"
-      },
-      "igaming-platform": {
-        "title": "iGaming platform accelerates mobile roadmap",
-        "date": "2023",
-        "industry": "iGaming",
-        "body": [
-          "An established iGaming operator launched a loyalty product that demanded net-new mobile capabilities.",
-          "We deployed an embedded recruiter, sourcer and technical screener to collaborate with the VP of Product and mobile engineering lead.",
-          "The team delivered Kotlin, Swift, QA automation and product management talent in under 30 days, aligned to regulated market requirements.",
-          "Launch velocity improved by 40% with retention targets surpassed within the first quarter."
-        ],
-        "result": "4 hires in 30 days"
-      },
-      "ai-fraud-detection": {
-        "title": "AI fraud detection company enters MENA",
-        "date": "2024",
-        "industry": "AI / FinCrime",
-        "body": [
-          "A fraud detection scale-up expanded into MENA and required bilingual data science and compliance leadership talent.",
-          "ITechWise mapped out target markets in UAE, KSA and Egypt, aligning compensation with local trends and regulatory expectations.",
-          "We sourced multilingual data scientists, risk managers and product leaders experienced with AML frameworks and high-scale transaction data.",
-          "The company launched MENA operations on schedule with immediate wins in enterprise fintech partnerships."
-        ],
-        "result": "5 hires in 45 days"
-      }
-    }
-  },
-  "aboutPage": {
-    "label": "About",
-    "heading": "Your global partner for technical hiring",
-    "intro": "ITechWise is built by operators who have scaled engineering teams across venture-backed startups and enterprise innovation groups. We blend automation, market intelligence and human judgement to deliver talent that ships.",
-    "paragraphs": [
-      "Our talent graph spans 7 million candidates across 120+ countries. We speak 18 languages and maintain active communities in blockchain, trading, fintech, iGaming and AI. This reach enables us to move faster than traditional search firms.",
-      "Engagements are transparent and collaborative. Expect weekly reporting, calibration loops, interview support and compensation guidance. We operate as an extension of your talent function with incentives aligned to successful hires.",
-      "The team includes ex-founders, engineers and recruiters who understand the nuances of technical evaluation. Every shortlist includes technical deep-dives, narrative summaries and cultural observations to accelerate decision making.",
-      "From stealth startups to public companies, clients trust ITechWise to deliver scarce talent in competitive markets. Our goal is to make hiring predictable, data-driven and human."
-    ]
-  },
-  "contactPage": {
-    "label": "Contact",
-    "heading": "Book a discovery call",
-    "description": "Share your hiring roadmap and we will design a tailored approach. Expect a shortlist of vetted candidates within 48 hours of kickoff."
-  },
-  "articleLayout": {
-    "label": "Insights"
-  },
-  "blogList": {
-    "label": "Insights"
   }
 }
