@@ -1,34 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
-const steps = [
-  {
-    title: '01. Discovery call',
-    description: 'Align on your stack, hiring velocity and compensation bands.',
-  },
-  {
-    title: '02. Market mapping',
-    description: 'Activate the 7M+ candidate graph and outbound researchers.',
-  },
-  {
-    title: '03. Shortlist in 48h',
-    description: 'Receive a curated slate with video notes, code samples and cultural fit.',
-  },
-  {
-    title: '04. Hiring support',
-    description: 'Interview coordination, offer negotiation and 2–3-month replacement guarantee.',
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 const ProcessStepper = () => {
+  const { t } = useTranslation();
+  const steps = t('processStepper.steps', { returnObjects: true }) || [];
+
   return (
     <section className="py-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="glass-panel rounded-3xl border border-white/10 p-8 sm:p-12">
           <div className="flex flex-col gap-10">
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-muted">Process</p>
-              <h2 className="mt-4 text-3xl sm:text-4xl font-semibold">How we deliver predictable hiring</h2>
+              <p className="text-sm uppercase tracking-[0.3em] text-muted">{t('processStepper.label')}</p>
+              <h2 className="mt-4 text-3xl sm:text-4xl font-semibold">{t('processStepper.heading')}</h2>
             </div>
             <div className="grid gap-8">
               {steps.map((step, index) => (

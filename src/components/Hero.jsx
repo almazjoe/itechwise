@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ShieldCheck, MapPin, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const cardVariants = {
   initial: { y: 0, rotateX: 0 },
@@ -10,6 +11,10 @@ const cardVariants = {
 
 const Hero = () => {
   const prefersReducedMotion = useReducedMotion();
+  const { t } = useTranslation();
+  const stats = t('hero.stats', { returnObjects: true }) || [];
+  const card = t('hero.card', { returnObjects: true }) || {};
+  const processSteps = card.processSteps || [];
 
   return (
     <section className="relative overflow-hidden pt-16 pb-20 sm:pb-28">
@@ -18,41 +23,36 @@ const Hero = () => {
         <div className="space-y-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel border border-white/10 text-sm text-muted">
             <Sparkles className="h-4 w-4 text-brand" />
-            Predictable hiring for Web3, FinTech, iGaming and AI.
+            {t('hero.badge')}
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight">
-            Unlock elite engineering talent with <span className="text-gradient-gold">ITechWise</span>
+            {t('hero.headingStart')}{' '}
+            <span className="text-gradient-gold">{t('common.brandName')}</span>
           </h1>
           <p className="text-lg text-muted max-w-xl">
-            We deliver vetted specialists across blockchain, trading, payments, and AI. Get a shortlist within 48 hours, backed by deep technical screening and global reach.
+            {t('hero.description')}
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-brand text-bg font-semibold px-6 py-3 shadow-lg shadow-brand/40 hover:bg-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
             >
-              Get candidates in 48 hours
+              {t('hero.primaryCta')}
             </Link>
             <Link
               to="/cases"
               className="inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-text/80 hover:text-text"
             >
-              See case studies
+              {t('hero.secondaryCta')}
             </Link>
           </div>
           <dl className="grid sm:grid-cols-3 gap-6 text-sm text-muted">
-            <div>
-              <dt className="font-semibold text-text">7M+ candidate graph</dt>
-              <dd>48-hour shortlist from a multilingual pool.</dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-text">Deep technical vetting</dt>
-              <dd>Rust, Go, backend, DevOps, mobile, C-level.</dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-text">Global reach</dt>
-              <dd>Coverage across EU, MENA, APAC, LATAM, US.</dd>
-            </div>
+            {stats.map((item) => (
+              <div key={item.label}>
+                <dt className="font-semibold text-text">{item.label}</dt>
+                <dd>{item.description}</dd>
+              </div>
+            ))}
           </dl>
         </div>
         <motion.div
@@ -71,39 +71,39 @@ const Hero = () => {
               <div className="flex items-center gap-4">
                 <img
                   src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=facearea&w=200&q=80"
-                  alt="Candidate"
+                  alt={card.photoAlt}
                   className="h-16 w-16 rounded-2xl object-cover"
                 />
                 <div>
-                  <p className="text-lg font-semibold">Maria Iglesias</p>
-                  <p className="text-sm text-muted">Senior Rust Engineer · Spain</p>
+                  <p className="text-lg font-semibold">{card.name}</p>
+                  <p className="text-sm text-muted">{card.role}</p>
                 </div>
               </div>
               <dl className="mt-6 space-y-3 text-sm">
                 <div className="flex items-center justify-between">
-                  <dt className="text-muted">Status</dt>
+                  <dt className="text-muted">{card.statusLabel}</dt>
                   <dd className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-300 text-xs">
                     <span className="h-2 w-2 rounded-full bg-emerald-400" aria-hidden />
-                    Shortlisted
+                    {card.statusValue}
                   </dd>
                 </div>
                 <div className="flex items-center justify-between">
-                  <dt className="text-muted">Experience</dt>
-                  <dd className="text-text">10+ years · Web3, DeFi, Payments</dd>
+                  <dt className="text-muted">{card.experienceLabel}</dt>
+                  <dd className="text-text">{card.experienceValue}</dd>
                 </div>
                 <div className="flex items-center justify-between">
-                  <dt className="text-muted">Highlights</dt>
+                  <dt className="text-muted">{card.highlightsLabel}</dt>
                   <dd className="flex items-center gap-2 text-text">
                     <ShieldCheck className="h-4 w-4 text-brand" />
-                    Polyglot · Team Lead
+                    {card.highlightsValue}
                   </dd>
                 </div>
                 <div className="flex items-center justify-between">
                   <dt className="text-muted flex items-center gap-2">
                     <MapPin className="h-4 w-4" />
-                    Mobility
+                    {card.mobilityLabel}
                   </dt>
-                  <dd className="text-text">Remote | EU timezones</dd>
+                  <dd className="text-text">{card.mobilityValue}</dd>
                 </div>
               </dl>
             </motion.div>
@@ -114,9 +114,9 @@ const Hero = () => {
               transition={{ delay: 0.4, duration: 0.7 }}
             >
               <div className="rounded-2xl bg-[#0f1016] border border-white/10 px-6 py-4 shadow-lg shadow-black/40">
-                <p className="text-xs uppercase tracking-[0.3em] text-muted">Process</p>
+                <p className="text-xs uppercase tracking-[0.3em] text-muted">{card.processLabel}</p>
                 <ul className="mt-3 space-y-2 text-sm">
-                  {['Briefing', 'Sourcing', 'Interviews', 'Offer'].map((step, index) => (
+                  {processSteps.map((step, index) => (
                     <li key={step} className="flex items-center gap-2">
                       <span className={`h-2.5 w-2.5 rounded-full ${index < 3 ? 'bg-brand' : 'bg-white/20'}`} />
                       <span className={index < 3 ? 'text-text' : 'text-muted'}>{step}</span>

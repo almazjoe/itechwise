@@ -1,21 +1,14 @@
 import React from 'react';
-
-const logos = [
-  'ApeX Trading',
-  'OrbitPay',
-  'NovaBank',
-  'HyperLedger Labs',
-  'SolForge',
-  'Vela Esports',
-];
+import { useTranslation } from 'react-i18next';
 
 const LogoCloud = () => {
+  const { t } = useTranslation();
+  const logos = t('logoCloud.logos', { returnObjects: true }) || [];
+
   return (
     <section className="py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <p className="text-center text-sm uppercase tracking-[0.3em] text-muted mb-10">
-          Trusted by scaling teams worldwide
-        </p>
+        <p className="text-center text-sm uppercase tracking-[0.3em] text-muted mb-10">{t('logoCloud.heading')}</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
           {logos.map((logo) => (
             <div
