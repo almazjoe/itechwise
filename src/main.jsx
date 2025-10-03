@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import i18n from './i18n';
 import App from './App.jsx';
+import './lib/i18n.js';
 import './index.css';
 
 document.documentElement.setAttribute('lang', i18n.language || 'en');
